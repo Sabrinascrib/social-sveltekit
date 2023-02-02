@@ -1,4 +1,7 @@
 <script>
+
+export let value = '';
+
 	let  avatar, fileinput;
 	
 	const onFileSelected =(e)=>{
@@ -18,9 +21,9 @@
         {:else}
         <div class="bg-gray-100 w-96"> <img class="flex w-[50px] h-[50px] cursor-pointer" src="https://static.thenounproject.com/png/625182-200.png" alt="" on:click={()=>{fileinput.click();}} />
  </div>
-       {/if}
+       {/if }
 				
-        <div class="chan" on:click={()=>{fileinput.click();}}>Choose Image</div>
         <input style="display:none" type="file" accept=".jpg, .jpeg, .png" on:change={(e)=>onFileSelected(e)} bind:this={fileinput} >
-
+<textarea class="bg-gray-100 w-96 h-40" bind:value></textarea>
+<h1>{value}</h1>
 </div>
