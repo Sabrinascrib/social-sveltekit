@@ -1,1 +1,1 @@
-a  secial media platform coming soon
+a  social media platform coming soon
